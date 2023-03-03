@@ -137,17 +137,22 @@ class Phonebook:
                 return key
 
     def order_dic(self, reverse=False):
+        """
+        Método que retorna o tipo de ordenação Normal e Reversa
+        :param number: reverse = False -> Retorna dados em ordem
+        :param number: reverse = TRUE -> Retorna dados em ordem reversa
+        :return: return Dictionary
+        """
         phonebook_order = {}
         list_name = list(self.entries.keys())  # Transformando nomes em lista
-        print(f"Lista Veio==> {list_name}")
         list_name.sort()  # Ordenando Nomes
-        print(f"Lista Ordenada==> {list_name}")
+
         if reverse:
             list_name.reverse()  # Ordenação reversa dos nomes
-            print(f"Lista REVERSA==> {list_name}")
+
         for name in list_name:
             phonebook_order[name] = self.entries[name]
-        print(f"DIC==> {phonebook_order}")
+
         return phonebook_order
 
     """
