@@ -34,7 +34,7 @@ Atividade 2 - Pos Graduação CESAR SCHOOL - ETA 2022.1
                 <td>274</td>
                 <td>0</td>
                 <td>0</td>
-                <td class="right" data-ratio="274 284">96%</td>
+                <td class="right" data-ratio="274 284">100%</td>
             </tr>
         </tfoot>
     </table>
